@@ -9,9 +9,9 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-dir=""
-cmd=""
-user=""
+dir="/tmp"
+cmd="python3 -m http.server 8081"
+user="www-data"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
